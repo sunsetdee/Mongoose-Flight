@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+#new-form *, #add-review-form * {
+  font-size: 15px;
+}
+
