@@ -21,7 +21,7 @@
             </tr>
         </thead>
         <tbody>
-            <% flight.destinations.forEach(function(f) { %>
+            <% flight.destinations.forEach(function(f) { %> 
                 <tr>
                     <td><%= f.airport %></td>
                     <td><%= f.arrival %></td>
@@ -32,7 +32,24 @@
         <% } else { %>
             <h5>No Destination Yet</h5>
             <% } %>
-            
+        
+        <table>
+          <thead>
+            <tr>
+                <th>Seat</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+          <tbody>
+            <% tickets.forEach(function(t) { %>
+              <tr>
+                <td><%= t.seat %></td>
+                <td><%= t.price %></td>
+              </tr>
+              <% }); %>
+          </tbody>
+        </table>
+        <a href="/flights/<%= flight._id %>/tickets/new">Add Ticket</a>
             <br><br><h2>Details</h2>
           <form id="add-review-form" method="POST" action="/flights/<%= flight._id %>/destinations">
             <label>Airport Code:</label>
@@ -48,5 +65,7 @@
             </label>
             <input type="submit" value="Add Destination">
           </form>
+
+
           
             <%- include('../partials/footer') %>

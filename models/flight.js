@@ -33,7 +33,7 @@ const flightSchema = new Schema({
             const aYearFromNow = new Date();
             aYearFromNow.setFullYear(aYearFromNow.getFullYear() + 1);
             return aYearFromNow;
-        },
+        }, 
     },
     destinations: [destinationSchema]
 });
