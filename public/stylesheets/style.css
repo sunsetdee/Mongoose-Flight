@@ -1,18 +1,72 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  /* background-color: white ; */
+  background-size: cover;
+  background-position: center;  
+  /* background-color: orange; */
 }
 
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://i.imgur.com/WsBXyQL.jpg");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 a {
-  color: #00B7FF;
+  color: black;
 }
 
 #new-form *, #add-review-form * {
   font-size: 15px;
 }
 
+.nav1 {
+  display: flex;
+  justify-content: center;
+}
+
+.td1 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.head1 {
+  font-size: 35px;
+  margin-right: 50px;
+  padding-bottom: 30px;
+}
+
+.t1 {
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+
+.enter1 {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.new1 {
+  display: flex; 
+  justify-content: center;
+  font-size: 30px;
+} 
+
+.class1 {
+  font-size: 20px;
+}
+
+.new2 {
+  font-size: 20px;
+}
+
+.show1 {
+  text-align: center;
+}

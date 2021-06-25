@@ -1,12 +1,12 @@
 <%- include('../partials/header') %>
-
 <table>
     <thead>
         <tr>
-            <th>Airline</th>
-            <th>Airport</th>
-            <th>Flight Number</th>
-            <th>Departs</th>
+            <th class="t1">Airline</th>
+            <th class="t1">Airport</th>
+            <th class="t1">Flight Number</th>
+            <th class="t1">Departs</th>
+            <th class="t1">Details</th>
         </tr>
     </thead>
     
@@ -14,16 +14,15 @@
         
         <% flights.forEach(function(f) { %>
             <tr>
-                <td><%= f.airline %></td>
-                <td><%= f.airport %></td>
-                <td><%= f.flightNo %></td>
-                <td><%= f.departs %></td>
-                <td><a href="/flights/<%= f._id %>">Details</a></td>
+                <td class="td1"><%= f.airline %></td>
+                <td class="td1"><%= f.airport %></td>
+                <td class="td1"><%= f.flightNo %></td>
+                <td class="td1"><%= f.departs %></td>
+                <td class="td1"><a href="/flights/<%= f._id %>">Details</a></td>
             </tr>
             
             <% }); %>
         </tbody>
-    </table>
-        
+    </table> 
         
 <%- include('../partials/footer') %>
