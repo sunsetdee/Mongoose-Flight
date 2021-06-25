@@ -67,6 +67,49 @@ a {
   font-size: 20px;
 }
 
+
+.show2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 25px;
+} 
+
+.show3 {
+  text-align: center;
+  font-size: 25px;;
+}
 .show1 {
   text-align: center;
+  font-size: 25px;
 }
+
+.show4 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.show5 {
+  padding-top: 5px;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.show6 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.show7 {
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+.show8 {
+  font-size: 25px;
+}
+
+.ticket1 {
+  font-size: 20px;
+}
+

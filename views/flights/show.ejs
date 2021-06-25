@@ -1,23 +1,30 @@
 <%- include('../partials/header') %>
-
-<section id="show-page">
-    <div>Flight:</div>
-    <div><%= flight.airline %></div>
-    <div>Airport: </div>
-    <div><%= flight.airport %></div>
-    <div>Flight Number: </div>
-    <div><%= flight.flightNo %></div>
-    <div>Departs: </div>
-    <div><%= flight.departs %></div>
-  </section>
+  <table>
+    <thead>
+      <tr>
+        <th class="show2">Flight:</th>
+        <th class="show2">Airport:</th>
+        <th class="show2">Flight Number:</th>
+        <th class="show2">Departs:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="show3"><%= flight.airline %></td>
+        <td class="show3"><%= flight.airport %></td>
+        <td class="show3"><%= flight.flightNo %></td>
+        <td class="show3"><%= flight.departs %></td>
+      </tr>
+    </tbody>
+  </table>
 
   
   <% if (flight.destinations.length) { %>
     <table>
         <thead>
             <tr>
-                <th>Airport</th>
-                <th>Arrival</th>
+                <th class="show4">Airport</th>
+                <th class="show4">Arrival</th>
             </tr>
         </thead>
         <tbody>
@@ -30,27 +37,27 @@
             </tbody>
         </table>
         <% } else { %>
-            <h5>No Destination Yet</h5>
+            <h5 class="show1">No Destination Yet</h5>
             <% } %>
         
         <table>
           <thead>
             <tr>
-                <th>Seat</th>
-                <th>Price</th>
+                <th class="show5">Seat</th>
+                <th class="show5">Price</th>
             </tr>
         </thead>
           <tbody>
             <% tickets.forEach(function(t) { %>
               <tr>
-                <td><%= t.seat %></td>
-                <td><%= t.price %></td>
+                <td class="show6"><%= t.seat %></td>
+                <td class="show6"><%= t.price %></td>
               </tr>
               <% }); %>
           </tbody>
         </table>
-        <a href="/flights/<%= flight._id %>/tickets/new">Add Ticket</a>
-            <br><br><h2>Details</h2>
+        <a class="show7" href="/flights/<%= flight._id %>/tickets/new">Add Ticket</a>
+            <br><br><h2 class="show8">Add Destination</h2>
           <form id="add-review-form" method="POST" action="/flights/<%= flight._id %>/destinations">
             <label>Airport Code:</label>
             <select name="airport">
@@ -69,3 +76,14 @@
 
           
             <%- include('../partials/footer') %>
+
+            <!-- <section id="show-page">
+              <div>Flight:</div>
+              <div><%= flight.airline %></div>
+              <div>Airport: </div>
+              <div><%= flight.airport %></div>
+              <div>Flight Number: </div>
+              <div><%= flight.flightNo %></div>
+              <div>Departs: </div>
+              <div><%= flight.departs %></div>
+            </section> -->
